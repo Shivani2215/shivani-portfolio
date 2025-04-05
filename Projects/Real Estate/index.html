@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg" style="background-color: white">
+        <div class="container">
+          <!-- Brand -->
+          <a class="navbar-brand" href="#">
+            <img
+              src="./Images/Illustrations/logo1.svg"
+              alt="Logo"
+              width="170px"
+              height="65px"
+            />
+          </a>
+
+          <!-- Toggle Button for Offcanvas -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Offcanvas -->
+          <div
+            class="offcanvas offcanvas-top h-75"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active px-3" aria-current="page" href="#">Home</a>
+                </li>
+
+                <!-- about -->
+                <li class="nav-item">
+                  <a class="nav-link px-3" href="#hero">About Us</a>
+                </li>
+
+                <!-- featured properties -->
+                <li class="nav-item">
+                  <a class="nav-link px-3" href="#featured">Properties</a>
+                </li>
+
+                <!-- Map -->
+                <li class="nav-item">
+                  <a class="nav-link px-3" href="#map">Map</a>
+                </li>
+
+                <!-- news -->
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle px-3"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    News
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Our News</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Single Post 1</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Single Post 2</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Single Post 3</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <!-- contact -->
+                <li class="nav-item">
+                  <a class="nav-link px-3" href="#contact">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="inner text-center">
+          <div class="row">
+            <div class="col-12 mb-lg-3">
+              <span class="text-white title-xlarge text-uppercase fw-bold mb-0"
+                >Find your new</span
+              >
+              <span
+                class="text-white title-xlarge text-uppercase fw-bold d-block d-lg-inline-block ms-lg-4"
+                >house</span
+              >
+            </div>
+            <div class="col-12">
+              <span class="text-white title-xlarge title-xlarge2 text-uppercase"
+                >with thegem</span
+              >
+            </div>
+            <div class="col-12">
+              <a
+                class="btn border border-3 fw-bold explore"
+                style="
+                  border-radius: 5px;
+                  border-color: #ffffff;
+                  color: #ffffff;
+                "
+                onmouseleave="this.style.borderColor='#ffffff';this.style.backgroundColor='transparent';this.style.color='#ffffff';"
+                onmouseenter="this.style.borderColor='#ffffff';this.style.backgroundColor='#ffffff';this.style.color='#4390b8';"
+                href="#featured"
+                target="_self"
+                >EXPLORE</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Properties -->
+    <section id="featured" class="properties my-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title-h1 text-center pt-5 text-uppercase">
+              Featured Properties
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="props">
+      <div class="inner">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Property 1 -->
+            <div class="col-12">
+              <div class="row g-0">
+                <div class="col-12 col-lg-8">
+                  <div class="prop-img">
+                    <img
+                      src="./Images/Background/prop1.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="prop-caption h-100">
+                    <div class="caption-sizable-content with-bottom-line">
+                      <div class="title title-h3 text-uppercase">
+                        <span class="light"> Villa Deluxe </span>
+                      </div>
+                      <div class="info clearfix">
+                        <div class="caption-separator-line">
+                          25 November, 2020
+                        </div>
+                        <!-- -->
+                        <div class="caption-separator-line-hover">
+                          <span class="sep"></span>
+                          <a href="#" class="prop-likes">
+                            <i class="bi bi-heart-fill text-danger"></i>
+                            <span class="zilla-likes-count">7</span>
+                            <span class="zilla-likes-postfix"></span>
+                          </a>
+                        </div>
+                        <!-- -->
+                      </div>
+                      <div class="subtitle">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor
+                        </p>
+                      </div>
+                      <div class="info">
+                        in <a style="color: #428bca">Real Estate</a>
+                      </div>
+                    </div>
+                    <div class="caption-buttons d-flex">
+                      <!-- details btn -->
+                      <a
+                        class="btn btn-outline-info fw-normal border border-2 border-info rounded text-uppercase details-btn"
+                        href="https://codex-themes.com/thegem/sites/real-estate/pf/villa-deluxe-980-650-2/"
+                        target="_self"
+                        >Details</a
+                      >
+                      <!-- share btn -->
+                      <a
+                        class="btn bg-secondary text-white fw-normal rounded text-uppercase details-btn"
+                        href="#"
+                        target="_self"
+                        >
+                        <i class="bi bi-share-fill"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Property 2 -->
+            <div class="col-12">
+              <div class="row g-0">
+                <div class="col-12 col-lg-8">
+                  <div class="prop-img">
+                    <img
+                      src="./Images/Background/prop2.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 order-lg-first">
+                  <div class="prop-caption h-100">
+                    <div class="caption-sizable-content with-bottom-line">
+                      <div class="title title-h3 text-uppercase">
+                        <span class="light"> Grand Villa </span>
+                      </div>
+                      <div class="info clearfix">
+                        <div class="caption-separator-line">
+                          25 November, 2020
+                        </div>
+                        <!-- -->
+                        <div class="caption-separator-line-hover">
+                          <span class="sep"></span>
+                          <a href="#" class="prop-likes">
+                            <i class="bi bi-heart-fill text-danger"></i>
+                            <span class="zilla-likes-count">7</span>
+                          </a>
+                        </div>
+                        <!-- -->
+                      </div>
+                      <div class="subtitle">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor
+                        </p>
+                      </div>
+                      <div class="info">
+                        in <a style="color: #428bca">Real Estate</a>
+                      </div>
+                    </div>
+                    <div class="caption-buttons d-flex">
+                      <!-- details btn -->
+                      <a
+                        class="btn btn-outline-info fw-normal border border-2 border-info rounded text-uppercase details-btn"
+                        href="https://codex-themes.com/thegem/sites/real-estate/pf/villa-deluxe-980-650-2/"
+                        target="_self"
+                        >Details</a
+                      >
+                      <!-- share btn -->
+                      <a
+                        class="btn bg-secondary text-white fw-normal rounded text-uppercase details-btn"
+                        href="#"
+                        target="_self"
+                        >
+                        <i class="bi bi-share-fill"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Property 3 -->
+            <div class="col-12" style="margin-bottom: 1.5rem;">
+              <div class="row g-0">
+                <div class="col-12 col-lg-8">
+                  <div class="prop-img">
+                    <img
+                      src="./Images/Background/prop3.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="prop-caption h-100">
+                    <div class="caption-sizable-content with-bottom-line">
+                      <div class="title title-h3 text-uppercase">
+                        <span class="light"> Country House </span>
+                      </div>
+                      <div class="info">
+                        <div class="caption-separator-line">
+                          25 November, 2020
+                        </div>
+                        <!-- -->
+                        <div class="caption-separator-line-hover">
+                          <span class="sep"></span>
+                          <a href="#" class="prop-likes text-decoration-none">
+                            <i class="bi bi-heart-fill text-danger"></i>
+                            <span class="zilla-likes-count">7</span>
+                          </a>
+                        </div>
+                        <!-- -->
+                      </div>
+                      <div class="subtitle">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor
+                        </p>
+                      </div>
+                      <div class="info">
+                        in <a style="color: #428bca">Real Estate</a>
+                      </div>
+                    </div>
+                    <div class="caption-buttons d-flex">
+                      <!-- details btn -->
+                      <a
+                        class="btn btn-outline-info fw-normal border border-2 border-info rounded text-uppercase details-btn"
+                        href="https://codex-themes.com/thegem/sites/real-estate/pf/villa-deluxe-980-650-2/"
+                        target="_self"
+                        >Details</a
+                      >
+                      <!-- share btn -->
+                      <a
+                        class="btn bg-secondary text-white fw-normal rounded text-uppercase details-btn"
+                        href="#"
+                        target="_self"
+                        >
+                        <i class="bi bi-share-fill"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section id="map" class="map">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-5">
+            <div class="map-wrapper">
+              <!-- <div class="gem-divider" style="margin-top: 54px"></div> -->
+              <div class="map-heading map-text mt-lg-5">
+                <div class="title-h1 fw-bold">
+                  SELECT PLACE <span class="light fw-light">ON THE MAP</span>
+                </div>
+              </div>
+
+              <div class="gem-divider" style="margin-top: 38px"></div>
+
+              <div class="map-caption map-text pe-5">
+                <div class="cap-wrapper">
+                  <p style="color: #5f727f;">
+                    Lorem Ipsum proin gravida nibh vel velit auctor aliquet.
+                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+                    consequat ipsum, nec sagittis sem nibh id elit. Duis sed
+                    odio sit amet nibh vulputate cursus a sit amet mauris.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="map-img mt-5 mt-lg-0">
+              <img src="./Images/Background/maps.png" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title-h1 text-center pt-5 text-uppercase">
+              contact us
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts pt-0 pb-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="team-person px-0">
+              <div class="row">
+                <div class="col-4 pe-0">
+                  <div class="person-img text-center">
+                    <img src="./Images/Illustrations/person-img1.jpg" alt="" width="80" height="80" class="rounded-circle">
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="team-person-info">
+                    <div class="person-info">
+                      <div class="team-person-name mt-1"><span class="fw-lighter">Emerson Anderson</span></div>
+                      <div class="team-person-position mt-2">Senior Sales Manager</div>
+                      <div class="team-person-phone mt-2">
+                        <a href="tel:+1%20(987)%201625346">+1 (987) 1625346</a>
+                      </div>
+                      <div class="team-person-email mt-1">
+                        <a href="mailto:andersons@gmail.com" style="font-size: 14px;">
+                          <i class="bi bi-envelope-fill me-1"></i>
+                          andersons@gmail.com
+                        </a>
+                      </div>
+                    </div>
+                    <div class="social-links mt-1">
+                      <a title="Facebook" target="_blank" href="#" class="socials-item ms-0">
+                        <i class="bi bi-facebook"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-twitter"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-linkedin"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-skype"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="team-person px-0">
+              <div class="row">
+                <div class="col-4 pe-0">
+                  <div class="person-img text-center">
+                    <img src="./Images/Illustrations/person-img2.jpg" alt="" width="80" height="80" class="rounded-circle">
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="team-person-info">
+                    <div class="person-info">
+                      <div class="team-person-name mt-1"><span class="fw-lighter">Kenneth Diaz</span></div>
+                      <div class="team-person-position mt-2">Senior Sales Manager</div>
+                      <div class="team-person-phone mt-2">
+                        <a href="tel:+1%20(987)%201625346">+1 (987) 1625346</a>
+                      </div>
+                      <div class="team-person-email mt-1">
+                        <a href="mailto:andersons@gmail.com" style="font-size: 14px;">
+                          <i class="bi bi-envelope-fill me-1"></i>
+                          andersons@gmail.com
+                        </a>
+                      </div>
+                    </div>
+                    <div class="social-links mt-1">
+                      <a title="Facebook" target="_blank" href="#" class="socials-item ms-0">
+                        <i class="bi bi-facebook"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-twitter"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-linkedin"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-skype"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="team-person px-0">
+              <div class="row">
+                <div class="col-4 pe-0">
+                  <div class="person-img text-center">
+                    <img src="./Images/Illustrations/person-img3.jpg" alt="" width="80" height="80" class="rounded-circle">
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="team-person-info">
+                    <div class="person-info">
+                      <div class="team-person-name mt-1"><span class="fw-lighter">Steven Beals</span></div>
+                      <div class="team-person-position mt-2">Senior Sales Manager</div>
+                      <div class="team-person-phone mt-2">
+                        <a href="tel:+1%20(987)%201625346">+1 (987) 1625346</a>
+                      </div>
+                      <div class="team-person-email mt-1">
+                        <a href="mailto:andersons@gmail.com" style="font-size: 14px;">
+                          <i class="bi bi-envelope-fill me-1"></i>
+                          andersons@gmail.com
+                        </a>
+                      </div>
+                    </div>
+                    <div class="social-links mt-1">
+                      <a title="Facebook" target="_blank" href="#" class="socials-item ms-0">
+                        <i class="bi bi-facebook"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-twitter"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-linkedin"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-skype"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="team-person px-0">
+              <div class="row">
+                <div class="col-4 pe-0">
+                  <div class="person-img text-center">
+                    <img src="./Images/Illustrations/person-img4.jpg" alt="" width="80" height="80" class="rounded-circle">
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="team-person-info">
+                    <div class="person-info">
+                      <div class="team-person-name mt-1"><span class="fw-lighter">Ava Robinson</span></div>
+                      <div class="team-person-position mt-2">Senior Sales Manager</div>
+                      <div class="team-person-phone mt-2">
+                        <a href="tel:+1%20(987)%201625346">+1 (987) 1625346</a>
+                      </div>
+                      <div class="team-person-email mt-1">
+                        <a href="mailto:andersons@gmail.com" style="font-size: 14px;">
+                          <i class="bi bi-envelope-fill me-1"></i>
+                          andersons@gmail.com
+                        </a>
+                      </div>
+                    </div>
+                    <div class="social-links mt-1">
+                      <a title="Facebook" target="_blank" href="#" class="socials-item ms-0">
+                        <i class="bi bi-facebook"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-twitter"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-linkedin"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-skype"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="team-person px-0">
+              <div class="row">
+                <div class="col-4 pe-0">
+                  <div class="person-img text-center">
+                    <img src="./Images/Illustrations/person-img5.jpg" alt="" width="80" height="80" class="rounded-circle">
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="team-person-info">
+                    <div class="person-info">
+                      <div class="team-person-name mt-1"><span class="fw-lighter">Christina Perry</span></div>
+                      <div class="team-person-position mt-2">Senior Sales Manager</div>
+                      <div class="team-person-phone mt-2">
+                        <a href="tel:+1%20(987)%201625346">+1 (987) 1625346</a>
+                      </div>
+                      <div class="team-person-email mt-1">
+                        <a href="mailto:andersons@gmail.com" style="font-size: 14px;">
+                          <i class="bi bi-envelope-fill me-1"></i>
+                          andersons@gmail.com
+                        </a>
+                      </div>
+                    </div>
+                    <div class="social-links mt-1">
+                      <a title="Facebook" target="_blank" href="#" class="socials-item ms-0">
+                        <i class="bi bi-facebook"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-twitter"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-linkedin"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-skype"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="team-person px-0">
+              <div class="row">
+                <div class="col-4 pe-0">
+                  <div class="person-img text-center">
+                    <img src="./Images/Illustrations/person-img6.jpg" alt="" width="80" height="80" class="rounded-circle">
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="team-person-info">
+                    <div class="person-info">
+                      <div class="team-person-name mt-1"><span class="fw-lighter">Jackie Jackson</span></div>
+                      <div class="team-person-position mt-2">Senior Sales Manager</div>
+                      <div class="team-person-phone mt-2">
+                        <a href="tel:+1%20(987)%201625346">+1 (987) 1625346</a>
+                      </div>
+                      <div class="team-person-email mt-1">
+                        <a href="mailto:andersons@gmail.com" style="font-size: 14px;">
+                          <i class="bi bi-envelope-fill me-1"></i>
+                          andersons@gmail.com
+                        </a>
+                      </div>
+                    </div>
+                    <div class="social-links mt-1">
+                      <a title="Facebook" target="_blank" href="#" class="socials-item ms-0">
+                        <i class="bi bi-facebook"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-twitter"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-linkedin"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-instagram"></i>
+                      </a>
+                      <a title="Facebook" target="_blank" href="#" class="socials-item">
+                        <i class="bi bi-skype"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer-nav" class="site-footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3 order-lg-last">
+            <div id="footer-socials" class="text-center">
+              <a href="#" target="_blank" class="socials-item mx-1">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" target="_blank" class="socials-item mx-1">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="#" target="_blank" class="socials-item mx-1">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="#" target="_blank" class="socials-item mx-1">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#" target="_blank" class="socials-item mx-1">
+                <i class="bi bi-pinterest"></i>
+              </a>
+              <a href="#" target="_blank" class="socials-item mx-1">
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a href="#" target="_blank" class="socials-item mx-1">
+                <i class="bi bi-telegram"></i>
+              </a>
+              <a href="#" target="_blank" class="socials-item mx-1">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+                
+            </div>
+            <!-- #footer-socials -->
+          </div>
+          <div class="col-lg-6">
+            <div class="site-navigation my-3 my-lg-0">
+              <ul class="footer-menu list-unstyled d-flex justify-content-evenly mb-0 flex-wrap">
+                <li class="menu-item">
+                  <a href="#">Support</a>
+                </li>
+                <span class="sep"></span>
+                <li class="menu-item">
+                  <a href="#">Contact Us</a>
+                </li>
+                <span class="sep"></span>
+                <li class="menu-item">
+                  <a href="#">Disclaimer</a>
+                </li>
+                <span class="sep"></span>
+                <li class="menu-item">
+                  <a href="#">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 order-lg-first">
+            <div class="footer-site-info text-center">
+              © Copyrights
+              <a href="https://codex-themes.com/thegem/" target="_self"
+                >CodexThemes</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,1018 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Archivo', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    color: #676c71;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Archivo", sans-serif;
+    font-weight: normal;
+    color: #022d62;
+    margin: 0px 0px 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+p{
+    font-family: "Archivo", sans-serif;
+    line-height: 1.8;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.space-ptb {
+    padding: 100px 0;
+}
+
+/* Navbar */
+.navbar .navbar-collapse .nav-link{
+    color: #022D62;
+    display: block;
+    padding: 10px 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 15px;
+    text-transform: capitalize;
+    font-family: 'Archivo', sans-serif;
+}
+
+.navbar .nav-link:hover{
+    color: #EF3139;
+}
+
+.header .navbar .dropdown-menu{
+    padding: 15px;
+    position: static;
+    min-width: 10rem;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}
+
+/* Enable hover effect for dropdown */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Optional: Adjust spacing */
+}
+
+/* Prevent flicker effect */
+.dropdown-menu {
+    display: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Make dropdown-menu visible on hover */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Carousel */
+.carousel{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
+    background-color: black;
+}
+
+.carousel-inner, .carousel-item, img{
+    height: inherit;
+}
+
+.carousel img{
+    object-fit: cover;
+}
+
+.overlay .custom-caption{
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    left: 15%;
+    right: 15%;
+}
+
+.overlay .custom-caption h1 {
+    color: #ffffff;
+    font-size: 72px;
+    line-height: 82px;
+    margin-bottom: 20px;
+}
+
+.overlay .custom-caption h6 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.overlay .custom-caption .btn{
+    font-size: 14px;
+    font-weight: bold;
+    padding: 16px 34px;
+    line-height: 1;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    background: #022d62;
+}
+
+/* Software Services */
+.services .section-title h2{
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.category-box-style-02 {
+    padding: 60px 5px;
+    border-radius: 5px;
+    transform: scale(0.98);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 5px 5px 24px 0px rgba(2, 45, 98, 0.1);
+    transform: scale(1);
+    background: #022d62;
+}
+
+.category-box-style-02:hover{
+    background: #EF3139;
+    box-shadow: 5px 5px 24px 0px rgba(2, 45, 98, 0.1);
+    transform: scale(1);
+}
+
+.category-box-style-02 .category-icon {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.category-box-style-02 ul.category-list {
+    /* opacity: 0; */
+    transition: all 0.3s ease-in-out;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.category-box ul.category-list li {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.category-box-style-02 ul.category-list li a {
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    outline: medium none;
+    font-family: 'Archivo' ,sans-serif;
+    font-size: 14px;
+}
+
+.services> .container > div:nth-child(3) p{
+    font-family: 'Archivo' ,sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #676c71;
+}
+
+.services> .container > div:nth-child(3) a{
+    color: #022D62;
+    font-size: 14px;
+    padding: 16px 34px;
+    border-radius: 50px;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #ef3139;
+}
+
+/* Client Stories */
+.bg-dark-half-lg, .bg-dark-half-sm{
+    position: relative;
+}
+
+.bg-dark-half-lg:before, .bg-light-half-lg::before, .bg-dark-half-sm::before {
+    height: 470px;
+    content: "";
+    background: #022d62;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.case-study {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.case-study .case-study-img.case-study-lg {
+    min-height: 530px;
+}
+
+.case-study .case-study-img {
+    background-size: cover;
+    min-height: 249px;
+    border-radius: 5px;
+    background-position: center center;
+}
+
+.case-study .case-study-info{
+    padding: 20px;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    bottom: -90px;
+    z-index: 5;
+    opacity: 0;
+    border-radius: 5px;
+    background: #ffffff;
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%, 0%);
+}
+
+.case-study:hover .case-study-info {
+    opacity: 1;
+    bottom: 20px;
+}
+
+.case-study .case-study-title {
+    display: block;
+    color: #022d62;
+    font-size: 18px;
+    font-weight: 600;
+    outline: medium none;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.case-study .case-study-services {
+    display: block;
+    margin-bottom: 10px;
+    color: #ef3139;
+}
+
+.case-study .case-study-lg + .case-study-info p {
+    max-height: 340px;
+    overflow: auto;
+    line-height: 1.8;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.case-study .case-study-info p {
+    max-height: 66px;
+    overflow: auto;
+    line-height: 1.8;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* IT Solution Services */
+.features .section-title a{
+    color: #022D62;
+    font-size: 14px;
+    padding: 16px 34px;
+    border-radius: 50px;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #ef3139;
+}
+
+.feature-info.feature-info-style-01 {
+    background: #ffffff;
+    padding: 45px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 2px 2px 4px 0px rgba(2, 45, 98, 0.1);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-info-style-01 .feature-info-icon {
+    margin-bottom: 25px;
+    position: absolute;
+    top: 45px;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-info-style-01 .feature-info-content {
+    margin-top: 80px;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-info-style-01 .feature-info-content .icon-btn {
+    position: absolute;
+    bottom: -90px;
+}
+
+.feature-info-style-01:hover .feature-info-content {
+    margin-top: 0;
+    margin-bottom: 80px;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-info-style-01:hover {
+    background: #022d62;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-info-style-01:hover .feature-info-icon {
+    top: -90px;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-info-style-01:hover .feature-info-content .feature-info-title {
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-info-style-01:hover .feature-info-content p {
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-info-style-01:hover .feature-info-content .icon-btn {
+    bottom: 45px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Footer */
+.footer .social-icon li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.footer .social-icon li a {
+    font-size: 18px;
+    color: #022d62;
+}
+
+.footer .footer-link {
+    display: flex;
+}
+
+.footer .footer-link ul {
+    padding-right: 50px;
+}
+
+.footer .footer-link ul:last-child {
+    padding-right: 0px;
+}
+
+.footer .footer-link ul li a {
+    color: #293745;
+    font-weight: 500;
+    padding: 7px 0px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    font-family: 'Archivo' ,sans-serif;
+    font-size: 14px;
+}
+
+.contact-address .contact-item {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.contact-address .contact-item label {
+    min-width: 100px;
+    color: #022d62;
+    padding-right: 20px;
+    font-weight: 500;
+}
+
+.footer .footer-contact-info p {
+    color: #293745;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Archivo' ,sans-serif;
+}
+
+/* .contact-address .contact-item p {
+    margin-bottom: 0;
+} */
+
+/* About Hero */
+.header-inner-menu {
+    padding-bottom: 0;
+}
+
+.header-inner {
+    padding: 130px 0px;
+    background-size: cover;
+    background-position: center center;
+    z-index: 99;
+}
+
+.bg-overlay-black-50 {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-overlay-black-50:before {
+    background: rgba(2, 45, 98, 0.5);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.header-inner-menu .header-inner-title {
+    margin-bottom: 80px;
+}
+
+.header-inner .header-inner-title {
+    font-size: 18px;
+}
+
+.header-inner .header-inner-title h1{
+    font-size: 60px;
+}
+
+.header-inner .header-inner-title p{
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: 'Archivo' ,sans-serif;
+}
+
+/* About mission and vision */
+.feature-info-style-02 {
+    /* background: #ffffff; */
+    padding: 35px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 5px 24px 0px rgba(2, 45, 98, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* About reasons */
+.reasons a.btn{
+    color: #022D62;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 16px 34px;
+    line-height: 1;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.feature-info-style-07 .feature-info-content{
+    padding: 30px 0 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-info-style-07:hover .feature-info-content {
+    margin-top: -40px;
+    padding-bottom: 50px;
+}
+
+.feature-info-style-07 .feature-info-content .icon-btn {
+    width: 40px;
+    height: 40px;
+    background: #ef3139;
+    align-items: center;
+    bottom: -40px;
+    opacity: 0;
+}
+
+.feature-info-style-07:hover .feature-info-content .icon-btn {
+    bottom: 0px;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-info-style-04 {
+    padding: 45px;
+    background: #f6f6f6;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-info-style-04:hover {
+    background: #022d62;
+}
+
+.feature-info-style-04 .feature-info-content .feature-info-title {
+    position: absolute;
+    top: 45px;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-info-style-04:hover .feature-info-content .feature-info-title {
+    position: absolute;
+    top: -55px;
+}
+
+.feature-info-style-04 .feature-info-content p {
+    margin-top: 50px;
+    margin-bottom: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-info-style-04:hover .feature-info-content p {
+    color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.feature-info-style-04 .feature-info-content .btn {
+    position: absolute;
+    bottom: -55px;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-info-style-04:hover .feature-info-content .btn {
+    bottom: 35px;
+}
+
+/* Career speed and scale section */
+.speed-scale .counter.counter-03 {
+    background: #ef3139;
+    padding: 32px;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+}
+
+.counter .counter-content .timer {
+    position: relative;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    font-family: "Archivo", sans-serif;
+    color: #ffffff;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.counter .counter-content label {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.reasons .feature-info-style-06 .feature-info-number{
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Career Reasons to choose section */
+.reasons .feature-info-style-06 .feature-info-number::after {
+    content: "";
+    height: 2px;
+    background: #f6f6f6;
+    width: 0%;
+    position: absolute;
+    bottom: -2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-info-style-06:hover .feature-info-number::after {
+    width: 100%;
+    background: #022d62;
+}
+
+.reasons .feature-info-style-06 .feature-info-number span{
+    opacity: 0.2;
+    color: #022D62;
+    font-size: 48px;
+}
+
+.reasons .feature-info-style-06:hover .feature-info-number span {
+    color: #ef3139;
+    opacity: 0.6;
+}
+
+/* Industry Main Section */
+.bg-dark-half-sm:before, .bg-light-half-sm:before {
+    height: 250px;
+}
+
+.video-btn.btn-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.icon-btn.btn-animation {
+    opacity: 1;
+}
+
+.icon-btn-lg {
+    width: 80px;
+    height: 80px;
+}
+
+.icon-btn {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: #ef3139;
+    border-radius: 50%;
+    align-items: center; 
+    align-self: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.btn-animation.icon-btn-lg:before {
+    width: 80px;
+    height: 80px;
+}
+
+.btn-animation:before {
+    content: "";
+    position: absolute;
+    z-index: -9;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #ef3139;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+#service-offerings .category-grid-style-02 ul li {
+    display: flex;
+    width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 45px;
+}
+
+.category-grid-style-02 ul li a {
+    flex: 0 0 100%;
+    font-size: 18px;
+    color: #022d62;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #eeeeee;
+    text-decoration: none;
+    font-family: 'Archivo' ,sans-serif;
+}
+
+.category-grid-style-02 ul li a:hover {
+    color: #ef3139;
+}
+
+#stra-perf .feature-info-style-08 .feature-info-inner .feature-info-item{
+    padding-bottom: 90px;
+}
+
+.feature-info-style-08 .feature-info-item:before {
+    position: absolute;
+    top: 0;
+    content: "";
+    left: 38px;
+    height: 100%;
+    width: 2px;
+    background: #f6f6f6;
+}
+
+.feature-info-style-08 .feature-info-item:last-child {
+    padding-bottom: 0;
+}
+
+.feature-info-style-08 .feature-info-item:last-child:before {
+    padding-bottom: 0;
+    height: 0;
+}
+
+.feature-info-style-08 .feature-info-number span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #022d62;
+    font-size: 24px;
+    width: 74px;
+    height: 74px;
+    margin-right: 25px;
+    font-weight: bold;
+    border-radius: 50%;
+    position: relative;
+    background: #f6f6f6;
+}
+
+.feature-info-style-08 .feature-info-number span:after {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(246, 246, 246, 0);
+    border-left-color: #f6f6f6;
+    border-width: 6px;
+    margin-top: -6px;
+    margin-left: -1px;
+}
+
+.feature-info-style-08 .feature-info-content {
+    margin-top: 28px;
+}
+
+/* Case Study overview client details */
+.clients-detail li {
+    padding-right: 150px;
+    margin-top: 20px;
+}
+
+@media (max-width:991px) {
+    .space-ptb {
+        padding: 70px 0;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        z-index: 999;
+        background: #ffffff;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        padding: 10px;
+        -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .header .navbar .dropdown-menu {
+        max-height: 200px;
+        overflow: scroll;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    /* Carousel */
+    .overlay .custom-caption{
+        position: absolute;
+        top: 30%;
+        text-align: center;
+        left: 10%;
+        right: 10%;
+    }
+
+    .overlay .custom-caption h1 {
+        font-size: 66px;
+        line-height: 76px;
+        margin-bottom: 10px;
+    }
+
+    /* Software Services */
+    .services .section-title h2{
+        font-size: 24px;
+    }
+
+    .category-box-style-02 {
+        padding: 20px 5px;
+    }
+
+    /* Client Stories */
+    .case-study .case-study-info {
+        padding: 20px;
+    }
+
+    /* About Hero */
+    .header-inner-menu {
+        padding-bottom: 0;
+    }
+
+    .header-inner {
+        padding: 80px 0px;
+    }
+
+    .header-inner-menu .header-inner-title {
+        margin-bottom: 40px;
+    }
+
+    .feature-info-style-04 {
+        padding: 45px 15px;
+    }
+
+    /* Industry */
+    #service-offerings .category-grid-style-02 ul li {
+        width: 33.3333%;
+        margin-bottom: 35px;
+    }
+
+    .category-grid-style-02 ul li a {
+        padding-bottom: 25px;
+    }
+
+    #stra-perf .feature-info-style-08 .feature-info-inner .feature-info-item {
+        margin-bottom: 0px;
+        padding-bottom: 40px;
+    }
+    
+    /* Case Study Overview */
+    .clients-detail li {
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-title {
+        margin-bottom: 30px;
+    }
+
+    .space-ptb {
+        padding: 50px 0;
+    }
+
+    /* About Hero */
+    .header-inner-menu {
+        padding-bottom: 0;
+    }
+
+    .header-inner {
+        padding: 60px 0px;
+    }
+
+    .header-inner .header-inner-title {
+        font-size: 16px;
+    }
+
+    .header-inner-menu .header-inner-title {
+        margin-bottom: 20px;
+    }
+
+    .header-inner .header-inner-title h1{
+        font-size: 32px;
+    }
+
+    /* Index Carousel */
+    .carousel {
+        height: 500px;
+    }
+
+    .overlay .custom-caption{
+        position: absolute;
+        top: 10%;
+        text-align: center;
+        left: 5%;
+        right: 5%;
+    }
+
+    .overlay .custom-caption h1 {
+        font-size: 42px;
+        line-height: 52px;
+        margin-bottom: 10px;
+    }
+
+    .overlay .custom-caption h6 {
+       font-size: 17px;
+    }
+
+    /* Career reasons to choose section */
+    .feature-info-style-06 .feature-info-number {
+        padding-bottom: 20px;
+    }
+
+    /* Industry */
+    #service-offerings .category-grid-style-02 ul li {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+
+    .category-grid-style-02 ul li a {
+        padding-bottom: 15px;
+    }
+
+    #stra-perf .feature-info-style-08 .feature-info-inner .feature-info-item {
+        padding-bottom: 30px;
+    }
+
+    .feature-info-style-08 .feature-info-item:before {
+        left: 28px;
+    }
+
+    .feature-info-style-08 .feature-info-number span {
+        font-size: 16px;
+        width: 54px;
+        height: 54px;
+        margin-right: 15px;
+    }
+
+    .feature-info-style-08 .feature-info-content {
+        margin-top: 18px;
+    }
+
+    /* Case study overview */
+    .clients-detail li {
+        padding-right: 50px;
+        width: 50%;
+        float: left;
+    }
+
+    /* Footer */
+    .footer .social-icon li {
+        margin-right: 0;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width:575px){
+    /* About Hero */
+    .header-inner-menu {
+        padding-bottom: 0;
+    }
+
+    .header-inner {
+        padding: 40px 0px;
+    }
+
+    .header-inner .header-inner-title h1{
+        font-size: 30px;
+    }
+
+    /* Industry Main Section */
+    .bg-dark-half-sm::before {
+        height: 150px;
+    }
+
+    #service-offerings .category-grid-style-02 ul li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* Case study overview */
+    .clients-detail li {
+        padding-right: 0px;
+        width: 100%;
+        float: none;
+    }
+
+    /* Footer */
+    .footer .social-icon li {
+        margin-right: 0;
+        padding: 0 10px;
+    }
+
+    .footer .footer-link {
+        display: block;
+    }
+}

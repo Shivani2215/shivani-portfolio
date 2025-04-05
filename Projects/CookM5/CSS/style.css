@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+}
+
+body a{
+    text-decoration: none;
+    color: black;
+}
+
+body .black-btn:hover{
+    text-decoration: underline;
+}
+
+body .sec-padding{
+    padding: 5rem 0;
+}
+
+body .sec-title{
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+body .card-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 96px 16px 24px;
+    z-index: 5;
+}
+
+body .card-box .card-box-overlay {
+    z-index: 10;
+    background: linear-gradient(to bottom, transparent, #000000);
+}
+
+body .card-box h4, body .card-box a, body .card-box p{
+    z-index: 11;
+    color: #fed243;
+}
+
+body .card:hover .card-box h4{
+    text-decoration: underline;
+}
+
+body .card-box a:hover{
+    text-decoration: underline;
+}
+
+body .card img{
+    object-fit: cover;
+    width: 100%;
+}
+
+body .card:hover img{
+    transform: scale(1.1,1.1);
+    transition: all .3s ease-in-out;
+} 
+
+/* hero section */
+.hero, .kitchen2, .faq{
+    padding: 10rem 0;
+    height: 90vh;
+    background-image: url('../Images/illustration/hero-img.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.hero .overlay, .kitchen2 .overlay, .faq .overlay{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+/* Products Section */
+.products .card{
+    min-height: 345px; 
+}
+
+.products .card img{
+    min-height: 345px;
+}
+
+/* New Arrivals */
+.arrivals .card{
+    background-color: #bbbbbb;
+    min-height: 432px;
+}
+
+.arrivals .card img{
+    min-height: 432px;
+    border-radius: 7px;
+    border-top-right-radius: 100px;
+}
+
+/* Kitchen */
+.kitchen1{
+    height: 80vh;
+    background-image: url('../Images/illustration/section-bg.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.kitchen1 .kitchen1-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 29, 26, 0.4);
+    z-index: 0;
+}
+
+.kitchen1 a{
+    color: #E09E0D;
+}
+
+.kitchen1-text{
+    z-index: 2;
+}
+
+/* Best Seller */
+.best-seller .card{
+    min-height: 372px;
+}
+
+.best-seller .card img{
+    min-height: 372px;
+}
+
+/* Kitchen2  */
+.kitchen2{
+    background-image: url('../Images/illustration/section2-bg.jpg');
+}
+
+/* Newsletter */
+.newsletter{
+    background-color: #1f1d1a;
+}
+
+.newsletter .input-wrapper {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-left: 0%;
+}
+  
+.newsletter #myInput {
+    padding-right: 40px; 
+    width: 280px; 
+    border-radius: 30px;
+    height: 55px;
+    padding: 10px 24px;
+}
+  
+.newsletter #myButton {
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    border: 0;
+    transform: translateY(-50%);
+    border-radius: 9999px;
+    background-color: #000000;
+    color: white;
+    width: 120px;
+    height: 48px;
+    padding: 6px 24px;
+}
+
+/* Instagram Images */
+.instagram{
+    background-color: #bbbbbb;
+}
+
+/* FAQs */
+.faq{
+    background-image: url('../Images/illustration/faq-bg.jpg');
+    height: 150vh;
+}
+
+.faq .accordian-header{
+    padding: 20px !important;
+}
+
+/* Contact */
+.contact .logo-container{
+    flex-direction: column;
+}
+
+.contact .logo-container .logo{
+    margin: 0 2rem ;
+    min-width: 96px;
+    min-height: 96px;
+    aspect-ratio: 1;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: #bbbbbb;
+    margin-right: 2rem;
+}
+
+.contact .contact-btn{
+    flex-direction: column;
+}
+
+/* Footer */
+footer{
+    padding: 30px 0;
+    background-color: #1f1d1a;
+}
+
+
+@media (min-width:768px) {
+    /* Header  */
+    header nav .header-download{
+        margin-left: 300px;
+    }
+
+    /* Products */
+    .products .card{
+        min-height: 465px; 
+    }
+    
+    .products .card img{
+        min-height: 465px;
+    }
+
+    /* Newsletter */
+    .newsletter .input-wrapper{
+        margin-left: 15%;
+    }
+
+    .newsletter #myInput {
+        height: 55px;
+        width: 480px; 
+    }
+
+    .newsletter #myButton{
+        width: 130px;
+    }
+
+    /* Instagram */
+    .instagram img{
+        min-height: 400px;
+    }
+
+    /* FAQs */
+    .faq .accordian-header button{
+        padding: 32px !important;
+    }
+
+    /* Contact */
+    .contact .contact-btn{
+        flex-direction: row;
+    }
+}
+
+@media (min-width:1024px) {
+    /* Hero */
+    .hero{
+        height: 110vh;
+    }
+
+    /* Kitchen */
+    .kitchen1, .kitchen2{
+        height:100vh;
+    }
+
+    /* Newsletter */
+    .newsletter .input-wrapper{
+        margin-left: 29%;
+    }
+
+    /* FAQs */
+    .faq{
+        height: 115vh;
+    }
+
+    /* Contact */
+    .contact .logo-container{
+        flex-direction: row;
+    }
+}
+
+
+

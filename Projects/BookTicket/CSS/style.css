@@ -1,0 +1,23 @@
+body{
+  background-color: aliceblue;
+}
+.parent{
+  background-color: rgb(237, 226, 199);
+}
+.error-message {
+  color: rgb(235, 5, 5);
+  font-size: 19px;
+}
+.form-container {
+  margin-top: 70px;
+  max-width: 500px;
+  margin: auto;
+}
+.btn-custom {
+  background-color: #151d27;
+  color: white;
+  font-weight: bold;
+}
+.btn-custom:disabled {
+  background-color: #3d2d2d;
+}

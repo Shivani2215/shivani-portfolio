@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CookM5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="py-3">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <a href="#" class="fw-bold fs-2">CookM5</a>
+            <button
+              class="border-0 order-last d-lg-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navbarContent"
+              aria-controls="navbarContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="border-0">
+                <img src="./Images/background/menu.png" alt="" height="40" class="bg-white"/>
+              </span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" id="navbarContent">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav nav nav-underline me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="fw-bold fs-5 text-dark nav-link" href="#"
+                      >Mobile App</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="fw-bold fs-5 text-dark nav-link" href="#"
+                      >Appliances</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="fw-bold fs-5 text-dark nav-link" href="#"
+                      >Recipes</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="fw-bold fs-5 text-dark nav-link" href="#"
+                      >Partners</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      href="#"
+                      class="btn fs-5 p bg-dark text-white rounded-pill d-block d-md-none"
+                      >Download App</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="lg-menu w-50 d-none d-lg-block">
+              <ul
+                class="d-flex mb-0 align-items-center list-unstyled justify-content-around"
+              >
+                <li class="black-btn fs-5">Mobile App</li>
+                <li class="black-btn fs-5">Appliances</li>
+                <li class="black-btn fs-5">Recipes</li>
+                <li class="black-btn fs-5">Partners</li>
+              </ul>
+            </div>
+
+            <a
+              href="#"
+              class="btn header-download ms-lg-0 black-btn fs-5 bg-dark text-white rounded-pill d-none d-md-block"
+              >Download App</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero position-relative d-flex align-items-center">
+      <div class="overlay position-absolute"></div>
+      <div class="hero-text position-relative w-100">
+        <div class="container">
+          <div class="row justify-content-end">
+            <div class="col-12 col-lg-6">
+              <h1 class="fw-bold display-3">Kitchen Supplies & Wares</h1>
+              <p class="fs-5">
+                Facilisis magna etiam tempor orci eu lobortis elementum nibh
+                tellus. Eget arcu dictum varius duis at consectetur.
+              </p>
+              <a
+                href="#"
+                class="btn px-3 black-btn fs-6 fw-bold bg-dark text-white rounded-pill text-center text-uppercase"
+                >Shop Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products sec-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="card mb-4 mb-lg-0 card-item1 overflow-hidden position-relative w-100 rounded-4"
+            >
+              <img
+                src="./Images/illustration/kitchen.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="position-absolute bottom-0 card-box overflow-hidden">
+                <div
+                  class="card-box-overlay position-absolute top-0 start-0 w-100 h-100"
+                ></div>
+                <h4 class="position-relative">Kitchen Tools</h4>
+                <a href="#" class="text-uppercase fs-5 card-text">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="card mb-4 mb-lg-0 card-item2 overflow-hidden position-relative w-100 rounded-4"
+            >
+              <img
+                src="./Images/illustration/cooking.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="position-absolute bottom-0 card-box overflow-hidden">
+                <div
+                  class="card-box-overlay position-absolute top-0 start-0 w-100 h-100"
+                ></div>
+                <h4 class="position-relative">Cooking Utensil</h4>
+                <a href="#" class="text-uppercase fs-5 card-text">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div
+              class="card mb-4 mb-lg-0 card-item3 overflow-hidden position-relative w-100 rounded-4"
+            >
+              <img
+                src="./Images/illustration/cutlery.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="position-absolute bottom-0 card-box overflow-hidden">
+                <div
+                  class="card-box-overlay position-absolute top-0 start-0 w-100 h-100"
+                ></div>
+                <h4 class="position-relative">Cutlery Set</h4>
+                <a href="#" class="text-uppercase fs-5 card-text">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section class="arrivals sec-padding pt-3 ">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 sec-title">
+            <h3 class="display-6 fw-bold">New Arrivals</h3>
+          </div>
+        </div>
+        <div class="row g-2">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="card mb-2 mb-lg-0 overflow-hidden position-relative rounded-3"
+            >
+              <img src="./Images/illustration/arrival1.png" class="img-fluid" />
+              <div class="position-absolute bottom-0 card-box overflow-hidden">
+                <div
+                  class="card-box-overlay position-absolute top-0 start-0 w-100 h-100"
+                ></div>
+                <h4 class="position-relative text-center">Kitchen Tools</h4>
+                <p class="fs-4 text-center">$30.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="card mb-2 mb-lg-0 overflow-hidden position-relative rounded-3"
+            >
+              <img src="./Images/illustration/arrival2.png" class="img-fluid" />
+              <div class="position-absolute bottom-0 card-box overflow-hidden">
+                <div
+                  class="card-box-overlay position-absolute top-0 start-0 w-100 h-100"
+                ></div>
+                <h4 class="position-relative text-center">Cutlery Set</h4>
+                <p class="fs-4 text-center">$45.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="card mb-2 mb-lg-0 overflow-hidden position-relative rounded-3"
+            >
+              <img src="./Images/illustration/arrival3.png" class="img-fluid" />
+              <div class="position-absolute bottom-0 card-box overflow-hidden">
+                <div
+                  class="card-box-overlay position-absolute top-0 start-0 w-100 h-100"
+                ></div>
+                <h4 class="position-relative text-center">Water Boiler</h4>
+                <p class="fs-4 text-center">$75.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="card mb-2 mb-lg-0 overflow-hidden position-relative rounded-3"
+            >
+              <img src="./Images/illustration/arrival4.png" class="img-fluid" />
+              <div class="position-absolute bottom-0 card-box overflow-hidden">
+                <div
+                  class="card-box-overlay position-absolute top-0 start-0 w-100 h-100"
+                ></div>
+                <h4 class="position-relative text-center">Electric Cooker</h4>
+                <p class="fs-4 text-center">$100.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kitchen Img -->
+    <section
+      class="kitchen1 sec-padding position-relative d-flex align-items-center"
+    >
+      <div class="kitchen1-overlay position-absolute"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div
+              class="position-relative d-flex flex-column align-items-center"
+            >
+              <h1 class="display-2 fw-bold text-center text-white">
+                Neat And Clean Kitchen
+              </h1>
+              <p class="text-center fs-4 text-white">
+                Facilisis magna etiam tempor orci eu lobortis elementum nibh
+                tellus.
+              </p>
+              <p class="text-center fs-4 text-white">
+                Eget arcu dictum varius duis at consectetur.
+              </p>
+              <a
+                class="text-center border-0 black-btn py-2 bg-white rounded-pill text-uppercase"
+                style="width: 130px"
+                >Shop Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Seller -->
+    <section class="best-seller sec-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 sec-title">
+            <h3 class="display-6 fw-bold">Best Seller</h3>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card position-relative overflow-hidden">
+              <img src="./Images/illustration/spoon.png" class="rounded-2" />
+              <div class="card-box position-absolute overflow-hidden bottom-0">
+                <div
+                  class="card-box-overlay position-absolute top-0 start-0 w-100 h-100"
+                ></div>
+                <h4 class="text-center">Wooden Spoon</h4>
+                <p class="fs-4 text-center">$15.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card position-relative overflow-hidden">
+              <img src="./Images/illustration/board.png" class="rounded-2" />
+              <div class="card-box position-absolute overflow-hidden bottom-0">
+                <div
+                  class="card-box-overlay position-absolute top-0 start-0 w-100 h-100"
+                ></div>
+                <h4 class="text-center">Wooden Cutting Board</h4>
+                <p class="fs-4 text-center">$40.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card position-relative overflow-hidden">
+              <img
+                src="./Images/illustration/pot-liners.png"
+                class="rounded-2"
+              />
+              <div class="card-box position-absolute overflow-hidden bottom-0">
+                <div
+                  class="card-box-overlay position-absolute top-0 start-0 w-100 h-100"
+                ></div>
+                <h4 class="text-center">Pot Liners</h4>
+                <p class="fs-4 text-center">$20.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card position-relative overflow-hidden">
+              <img src="./Images/illustration/arrival2.png" class="rounded-2" />
+              <div class="card-box position-absolute overflow-hidden bottom-0">
+                <div
+                  class="card-box-overlay position-absolute top-0 start-0 w-100 h-100"
+                ></div>
+                <h4 class="text-center">Cutlery Set</h4>
+                <p class="fs-4 text-center">$45.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card position-relative overflow-hidden">
+              <img src="./Images/illustration/arrival1.png" class="rounded-2" />
+              <div class="card-box position-absolute overflow-hidden bottom-0">
+                <div
+                  class="card-box-overlay position-absolute top-0 start-0 w-100 h-100"
+                ></div>
+                <h4 class="text-center">Kitchen Tools</h4>
+                <p class="fs-4 text-center">$30.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card position-relative overflow-hidden">
+              <img src="./Images/illustration/grinder.png" alt="" />
+              <div class="card-box position-absolute overflow-hidden bottom-0">
+                <div
+                  class="card-box-overlay position-absolute top-0 start-0 w-100 h-100"
+                ></div>
+                <h4 class="text-center">Grinder</h4>
+                <p class="fs-4 text-center">$85.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kitchen2 -->
+    <section
+      class="kitchen2 position-relative d-flex align-items-center sec-padding"
+    >
+      <div class="overlay position-absolute"></div>
+      <div class="hero-text position-relative w-100">
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-12 col-lg-6">
+              <h1 class="fw-bold display-3 text-capitalize">
+                Solutions for the Kitchen
+              </h1>
+              <p class="fs-5">Lorem Ipsum is simply typesetting dummy text.</p>
+              <a
+                href="#"
+                class="btn px-4 py-2 black-btn fs-5 bg-dark text-white rounded-pill text-center text-uppercase"
+                >Shop Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- newsletter -->
+    <section class="newsletter sec-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-white">
+            <h1 class="mb-3 text-center mbr-fonts-style fs-2">
+              <strong>SIGN UP</strong>
+              <div>
+                <strong>FOR NEWSLETTER</strong>
+              </div>
+            </h1>
+            <p class="mb-3 text-center fs-5">
+              Subscribe to the weekly newsletter for all the latest updates
+            </p>
+            <div>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  id="myInput"
+                  placeholder="Your email address"
+                />
+                <button id="myButton" class="black-btn">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Only Text -->
+    <section class="text sec-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <p class="text-center fs-2">
+              Vel quam elementum pulvinar etiam non. Sollicitudin tempor id eu
+              nisl nunc mi ipsum faucibus. Turpis egestas maecenas pharetra
+              convallis posuere morbi leo urna molestie. Tortor condimentum
+              lacinia quis vel eros donec.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="instagram sec-padding" style="padding-bottom: 1rem">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 sec-title">
+            <h3 class="display-6 fw-bold">Mentage On Instagram</h3>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-12 col-md-6 col-lg-4">
+            <img
+              src="./Images/illustration/insta1.jpg"
+              alt=""
+              class="img-fluid rounded-4"
+            />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <img
+              src="./Images/illustration/insta2.jpg"
+              alt=""
+              class="img-fluid rounded-4"
+            />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <img
+              src="./Images/illustration/insta3.jpg"
+              alt=""
+              class="img-fluid rounded-4"
+            />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <img
+              src="./Images/illustration/insta4.jpg"
+              alt=""
+              class="img-fluid rounded-4"
+            />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <img
+              src="./Images/illustration/insta5.jpg"
+              alt=""
+              class="img-fluid rounded-4"
+            />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <img
+              src="./Images/illustration/insta6.jpg"
+              alt=""
+              class="img-fluid rounded-4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-padding pt-0" style="background-color: #bbbbbb">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <img
+              src="./Images/illustration/section-bg.jpg"
+              alt=""
+              style="object-fit: cover"
+              class="w-100 rounded-4"
+              height="620"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq sec-padding position-relative align-items-center">
+      <div class="overlay position-absolute"></div>
+      <div class="container position-relative">
+        <div class="row justify-content-center">
+          <div class="col-12 sec-title">
+            <h3 class="fs-3 fw-bold">Frequently Asked Questions</h3>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header black-btn black-btn">
+                  <button
+                    class="accordion-button collapsed p-4 fs-4"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Is the CookM5 app free?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body p-4 fs-5">
+                    The number of items is limited in this block. Open Quisque
+                    id diam vel quam elementum pulvinar etiam non. Et ultrices
+                    neque ornare aenean. Venenatis urna cursus eget nunc
+                    scelerisque viverra. Fusce id velit ut tortor pretium
+                    viverra suspendisse potenti nullam.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header black-btn">
+                  <button
+                    class="accordion-button colld p-4 fs-4"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Do you need to have a smart appliance to use CookM5?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body p-4 fs-5">
+                    Sed euismod nisi porta lorem. Cras sed felis eget velit.
+                    Facilisis leo vel fringilla est ullamcorper eget nulla
+                    facilisi. Aliquam ut porttitor leo a diam. Congue eu
+                    consequat ac felis donec et odio pellentesque diam.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header black-btn">
+                  <button
+                    class="accordion-button colld p-4 fs-4"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    How do I connect my appliances in the app?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body p-4 fs-5">
+                    Quisque id diam vel quam elementum pulvinar etiam non. Et
+                    ultrices neque ornare aenean. Venenatis urna cursus eget
+                    nunc scelerisque viverra. Fusce id velit ut tortor pretium
+                    viverra suspendisse potenti nullam.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header black-btn">
+                  <button
+                    class="accordion-button colld p-4 fs-4"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    Is the CookM5 app available on desktop?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body p-4 fs-5">
+                    At auctor urna nunc id cursus metus. Cras tincidunt lobortis
+                    feugiat vivamus at augue eget arcu dictum. Sit amet luctus
+                    venenatis lectus magna.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header black-btn">
+                  <button
+                    class="accordion-button colld p-4 fs-4"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFive"
+                  >
+                    What is a smart recipe?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body p-4 fs-5">
+                    Amet consectetur adipiscing elit pellentesque habitant.
+                    Pellentesque diam volutpat commodo sed egestas egestas
+                    fringilla. Proin fermentum leo vel orci porta non pulvinar
+                    neque. Nulla malesuada pellentesque elit eget gravida cum
+                    sociis natoque penatibus.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+     <section class="contact sec-padding">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-3 ">
+              <div class="div-img d-none d-lg-block" style="width: 224px;">
+                <img src="./Images/illustration/qr-code.jpg" alt="" class="w-100">
+              </div>
+            </div>
+            <div class="col-lg-8 offset-lg-1">
+              <div class="div-text">
+                <div class="logo-container d-flex align-items-center">
+                  <div class="logo ms-lg-0 d-flex align-items-center justify-content-center">
+                    <a href="#">
+                      <img src="./Images/illustration/contact-logo.png" alt="" style="height: 4.5rem;">
+                    </a>
+                  </div>
+                  <div class="logo-text mt-5">
+                    <h4 class="text-center fs-2 fw-bold">Kitchen Supplies & Wares</h4>
+                    <h5 class="text-center text-lg-start fw-bold">Leo vel fringilla est ullamcorper.</h5>
+                  </div>
+                </div>
+                <p class="mt-3 fs-3 text-center text-lg-start">
+                  Sit amet luctus venenatis lectus magna. Odio euismod lacinia at quis risus sed vulputate.
+                </p>
+              </div>
+            </div>
+            <div class="contact-btn col-12 d-flex align-items-center gap-2 mt-3 d-lg-none">
+              <a href="#" class="w-100 py-2 fs-5 bg-dark text-white rounded-pill btn black-btn">Download Now</a>
+              <a href="#" class="w-100 py-2 fs-5 bg-dark text-white rounded-pill btn black-btn">Get It On Google Play</a>
+            </div>
+          </div>
+        </div>
+     </section>
+
+     <footer>
+      <div class="container">
+        <div class="row">
+          <p class="text-white text-center fs-5 mb-0">© Copyright 2022 Mobirise - All Rights Reserved</p>
+        </div>
+      </div>
+     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

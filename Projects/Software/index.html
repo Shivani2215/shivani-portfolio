@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hi-Soft</title>
+    <link rel="stylesheet" href="./CSS/styles.css" />
+
+    <!-- Bootstrap icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand" href="./index.html">
+          <img src="./Images/Illustrations/logo.svg" alt="Logo" />
+        </a>
+
+        <!-- Toggle Button for Offcanvas -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target=".navbar-collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse">
+          <ul class="navbar-nav w-100 justify-content-end gap-2">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./career.html">Careers</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                href="./industry.html"
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                >Industries</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="./industry.html" class="dropdown-item">Healthcare</a></li>
+                <li><a href="./industry.html" class="dropdown-item">Automotive</a></li>
+                <li><a href="./industry.html" class="dropdown-item">Finance</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                href="./case-study.html"
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                >Case Studies</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a href="./case-study.html" class="dropdown-item">Case Study 1</a></li>
+                <li><a href="./case-study.html" class="dropdown-item">Case Study 2</a></li>
+                <li><a href="./case-study.html" class="dropdown-item">Case Study 3</a></li>
+              </ul>
+            </li>
+
+            <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <!-- Carousel inner -->
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img
+            src="./Images/Illustrations/slider-1.jpg"
+            class="d-block w-100 "
+          />
+          <div class="overlay position-absolute top-0 start-0 bottom-0 end-0 w-100 h-100" style="background-color: rgba(2, 45, 98, 0.5); z-index: 2;">
+            <div class="custom-caption">
+              <h1>A digital marketing company you can trust</h1>
+              <h6>Award-Winning website design &amp; creative digital agency.</h6>
+              <a href="#" class="btn text-white">Get Started Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img
+            src="./Images/Illustrations/slider-2.jpg"
+            class="d-block w-100"
+          />
+          <div class="overlay position-absolute top-0 start-0 bottom-0 end-0 w-100 h-100" style="background-color: rgba(0,0,0,0.5); z-index: 2;">
+            <div class="custom-caption">
+              <h1>Award winning digital agency</h1>
+              <h6>We're Hi-soft. We help drive change with technology.</h6>
+              <a href="#" class="btn btn-dark btn-round text-white">Get Started Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prev Next button -->
+      <button
+        class="carousel-control-prev d-none d-lg-block"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next d-none d-lg-block"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Software Services -->
+    <section class="services space-ptb">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-9 col-lg-10">
+            <div class="section-title text-center">
+              <h2>Digital marketing services that help you grow.</h2>
+              <p>Fortune 100 companies and established brands trust our enterprise software development.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-sm-5 mb-4">
+            <div class="category-box category-box-style-02 text-center">
+              <div class="category-icon">
+                <img src="./Images/Background/monitor.png" alt="" class="mb-3" style="width: 75px; height: 75px;">
+                <h5 class="category-title mb-0 text-light">Web Development</h5>
+              </div>
+              <ul class="category-list">
+                <li><a href="#">E-commerce strategy</a></li>
+                <li><a href="#">Custom design</a></li>
+                <li><a href="#">Front-End development</a></li>
+                <li><a href="#">Business intelligence</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-sm-5 mb-4">
+            <div class="category-box category-box-style-02 text-center">
+              <div class="category-icon">
+                <img src="./Images/Background/mobile.png" alt="" class="mb-3" style="width: 75px; height: 75px;">
+                <h5 class="category-title mb-0 text-light">Mobile Development</h5>
+              </div>
+              <ul class="category-list">
+                <li><a href="#">iOS</a></li>
+                <li><a href="#">Android</a></li>
+                <li><a href="#">Hybrid platform</a></li>
+                <li><a href="#">User testing</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-sm-5 mb-4">
+            <div class="category-box category-box-style-02 text-center">
+              <div class="category-icon">
+                <img src="./Images/Background/branding.png" alt="" class="mb-3" style="width: 75px; height: 75px;">
+                <h5 class="category-title mb-0 text-light">Branding Services</h5>
+              </div>
+              <ul class="category-list">
+                <li><a href="#">Logo design</a></li>
+                <li><a href="#">UI/UX design</a></li>
+                <li><a href="#">Visual design</a></li>
+                <li><a href="#">Brand collateral</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-sm-5 mb-4">
+            <div class="category-box category-box-style-02 text-center">
+              <div class="category-icon">
+                <img src="./Images/Background/advertising.png" alt="" class="mb-3" style="width: 75px; height: 75px;">
+                <h5 class="category-title mb-0 text-light">Digital Marketing</h5>
+              </div>
+              <ul class="category-list">
+                <li><a href="#">Marketing strategy</a></li>
+                <li><a href="#">Paid media</a></li>
+                <li><a href="#">Influencer marketing</a></li>
+                <li><a href="#">Email marketing</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 d-md-flex justify-content-center align-items-center">
+            <p class="mb-3 mb-md-0 mx-0 mx-md-3">Contact us to discuss the goals for your brand</p>
+            <a href="#" class="btn text-white mx-0 mx-md-3 fw-bold lh-1 position-relative text-center">
+              Get A Quote<i class="bi bi-arrow-right ps-3 fw-bold"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Stories -->
+     <section class="stories space-ptb bg-dark-half-lg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-9 col-lg-10">
+            <div class="section-title text-center position-relative">
+              <h2 class="text-white"><span class="text-danger">What's next?</span> our latest client stories</h2>
+              <p class="lead text-white">We love what we do. Our clients tell us the same thing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- first -->
+          <div class="col-md-6 col-lg-4 order-lg-1 order-1">
+            <div class="case-study">
+              <div class="case-study-img case-study-lg" style="background-image: url('./Images/Illustrations/client-1.jpg')">
+              </div>
+              <div class="case-study-info">
+                <a class="case-study-title fw-bold" href="#">Gozzby</a>
+                <span class="case-study-services">Music</span>
+                <p>If success is a process with a number of defined steps, then it is just like any other process.</p>
+                <a href="#" class="icon-btn">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- second -->
+          <div class="col-md-12 col-lg-4 order-lg-2 order-3">
+            <div class="row">
+              <div class="col-sm-6 col-lg-12">
+                <div class="case-study">
+                  <div class="case-study-img" style="background-image: url('./Images/Illustrations/client-3.jpg');">
+                  </div>
+                  <div class="case-study-info">
+                    <a class="case-study-title fw-bold" href="#">Educatgenix</a>
+                    <span class="case-study-services">Education</span>
+                    <p>We all carry a lot of baggage, thanks to our upbringing...</p>
+                    <a href="#" class="icon-btn">
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-12">
+                <div class="case-study">
+                  <div class="case-study-img" style="background-image: url('./Images/Illustrations/client-4.jpg');">
+                  </div>
+                  <div class="case-study-info">
+                    <a class="case-study-title" href="#">Petfluent</a>
+                    <span class="case-study-services">Pet Care</span>
+                    <p>You will drift aimlessly until you arrive back at the original dock</p>
+                    <a href="#" class="icon-btn">
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- third -->
+          <div class="col-md-6 col-lg-4 order-lg-3 order-2">
+            <div class="case-study">
+              <div class="case-study-img case-study-lg" style="background-image: url('./Images/Illustrations/client-2.jpg');">
+              </div>
+              <div class="case-study-info">
+                <a class="case-study-title fw-bold" href="#">Financeoont</a>
+                <span class="case-study-services">Finance</span>
+                <p>It is truly amazing the damage that we, as parents, can inflict on our children...</p>
+                <a href="#" class="icon-btn">
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row"></div>
+      </div>
+     </section>
+
+    <!-- IT Solution Services -->
+     <section class="features space-ptb position-relative bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title position-sticky" style="top: 80px;">
+              <h2 class="fw-bold fs-1">This is what we do and we do it perfectly.</h2>
+              <p class="mb-4">Please take a look at the range of <b>IT solution</b> services we offer to your brand as a full-service leading marketing agency.</p>
+              <a href="#" class="btn text-white mx-0 mx-md-3 fw-bold lh-1 position-relative text-center">
+                See All Services<i class="bi bi-arrow-right ps-3 fw-bold"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="feature-info feature-info-style-01">
+                  <div class="feature-info-icon">
+                    <img src="./Images/Background/cloud-protection.png" alt="" style="width: 60px; height: 65px;">
+                  </div>
+                  <div class="feature-info-content">
+                    <h5 class="mb-3 feature-info-title">Information Security</h5>
+                    <p class="mb-0">
+                      Do it today. Remind yourself of someone you know who died suddenly and the fact that there is no guarantee that tomorrow will come.
+                    </p>
+                    <a href="#" class="icon-btn">
+                      <img src="./Images/Background/right-arrow.png" alt="" style="width: 30px; height:30px;">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="feature-info feature-info-style-01 mt-4 mt-lg-5">
+                  <div class="feature-info-icon">
+                    <img src="./Images/Background/megaphone.png" alt="" style="width: 60px; height: 65px;">
+                  </div>
+                  <div class="feature-info-content">
+                    <h5 class="mb-3 feature-info-title">Mobile Platforms</h5>
+                    <p class="mb-0">
+                      We know this in our gut, but what can we do about it? How can we motivate ourselves? One of the most difficult aspects of achieving success.
+                    </p>
+                    <a href="#" class="icon-btn">
+                      <img src="./Images/Background/right-arrow.png" alt="" style="width: 30px; height:30px;">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="feature-info feature-info-style-01 mt-4 mt-lg-5">
+                  <div class="feature-info-icon">
+                    <img src="./Images/Background/monitor.png" alt="" style="width: 60px; height: 65px;">
+                  </div>
+                  <div class="feature-info-content">
+                    <h5 class="mb-3 feature-info-title">Event Processing</h5>
+                    <p class="mb-0">
+                      There is really no magic to it and it’s not reserved only for a select few people. As such, success really has nothing to do with luck.
+                    </p>
+                    <a href="#" class="icon-btn">
+                      <img src="./Images/Background/right-arrow.png" alt="" style="width: 30px; height:30px;">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="feature-info feature-info-style-01 mt-4 mt-lg-5">
+                  <div class="feature-info-icon">
+                    <img src="./Images/Background/bookmark.png" alt="" style="width: 60px; height: 65px;">
+                  </div>
+                  <div class="feature-info-content">
+                    <h5 class="mb-3 feature-info-title">Data Synchronization</h5>
+                    <p class="mb-0">
+                      Positive pleasure-oriented goals are much more powerful motivators than negative fear-based ones. Although each is successful separately.
+                    </p>
+                    <a href="#" class="icon-btn">
+                      <img src="./Images/Background/right-arrow.png" alt="" style="width: 30px; height:30px;">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="feature-info feature-info-style-01 mt-4 mt-lg-5">
+                  <div class="feature-info-icon">
+                    <img src="./Images/Background/automation.png" alt="" style="width: 60px; height: 65px;">
+                  </div>
+                  <div class="feature-info-content">
+                    <h5 class="mb-3 feature-info-title">Process Automation</h5>
+                    <p class="mb-0">
+                      It must come from within as the natural product of your desire to achieve something and your belief that you are capable to succeed at your goal.
+                    </p>
+                    <a href="#" class="icon-btn">
+                      <img src="./Images/Background/right-arrow.png" alt="" style="width: 30px; height:30px;">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="feature-info feature-info-style-01 mt-4 mt-lg-5">
+                  <div class="feature-info-icon">
+                    <img src="./Images/Background/content-plan.png" alt="" style="width: 60px; height: 65px;">
+                  </div>
+                  <div class="feature-info-content">
+                    <h5 class="mb-3 feature-info-title">Content Management</h5>
+                    <p class="mb-0">
+                      There are basically six key areas to higher achievement. Some people will tell you there are four while others may tell you there are eight.
+                    </p>
+                    <a href="#" class="icon-btn">
+                      <img src="./Images/Background/right-arrow.png" alt="" style="width: 30px; height:30px;">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+    <!-- Footer -->
+     <footer class="footer pt-5">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-sm-3">
+              <a href="index.html">
+                <img class="img-fluid" src="./Images/Illustrations/logo.svg" alt="logo">
+              </a>
+            </div>
+            <div class="col-sm-9 text-sm-end mt-4 mt-sm-0">
+              <ul class="list-unstyled mb-0 social-icon">
+                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                <li><a href="#"><i class="bi bi-github"></i></a></li>
+                <li><a href="#"><i class="bi bi-dribbble"></i></a></li>
+                <li><a href="#"><i class="bi bi-behance"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <hr class="my-4 my-sm-5 pb-0">
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+            <h5 class="text-danger mb-2 mb-sm-4">IT Services</h5>
+            <div class="footer-link">
+              <ul class="list-unstyled mb-0">
+                <li><a href="#">Data Synchronization</a></li>
+                <li><a href="#">Content Management</a></li>
+                <li><a href="#">Content Delivery</a></li>
+                <li><a href="#">Transaction Processing</a></li>
+                <li><a href="#">Process Automation</a></li>
+              </ul>
+              <ul class="list-unstyled mb-0">
+                <li><a href="#">Event Processing</a></li>
+                <li><a href="#">Information Security</a></li>
+                <li><a href="#">Mobile Platforms</a></li>
+                <li><a href="#">Communications</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-2 mb-4 mb-lg-0">
+            <h5 class="text-danger mb-2 mb-sm-4">Company</h5>
+            <div class="footer-link">
+              <ul class="list-unstyled mb-0">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Leadership Team</a></li>
+                <li><a href="#">IT Blog</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Careers <span class="badge bg-success ms-2">We're hiring</span></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-2 mb-4 mb-sm-0">
+            <h5 class="text-danger mb-2 mb-sm-4">Support</h5>
+            <div class="footer-link">
+              <ul class="list-unstyled mb-0">
+                <li><a href="#">Forum Support</a></li>
+                <li><a href="#">Help &amp; FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Pricing And Plans</a></li>
+                <li><a href="#">Cookies Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4">
+            <div class="footer-contact-info">
+              <h5 class="text-danger mb-3">Contact hi-Soft</h5>
+              <div class="contact-address">
+                <div class="contact-item">
+                  <label class="fst-italic mb-0 text-end d-inline-block">Address:</label>
+                  <p>6580 Allison Turnpike Creminfort, AL 32808</p>
+                </div>
+                <div class="contact-item">
+                  <label class="fst-italic mb-0 text-end d-inline-block">Phone:</label>
+                  <h4 class="mb-0 fw-bold"><a href="#" class="text-decoration-none" style="color: #022d62;">+(704) 279-1249</a></h4>
+                </div>
+                <div class="contact-item">
+                  <label class="fst-italic mb-0 text-end d-inline-block">Email:</label>
+                  <a class="text-dark text-decoration-none" href="#">letstalk@hisoft.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom py-sm-5 py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <p class="mb-0">©Copyright 2020 <a href="index.html" class="text-decoration-none text-danger">hi-soft</a> All Rights Reserved</p>  
+            </div>
+          </div>
+        </div>
+      </div>
+     </footer>
+
+    <!-- JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

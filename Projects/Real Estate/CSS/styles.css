@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Monsterrat',sans-serif;
+    font-size: 19px;
+}
+
+body a{
+    text-decoration: none;
+    color: #428bca;
+}
+
+/* Navbar */
+.navbar-nav{
+    margin: 0 -20px;
+    justify-content:end;
+}
+
+.nav-item .nav-link{
+    position: relative;
+    display: block;
+    padding: 2px 16px;
+    font-family: 'Raleway' ,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3c3950 ;
+    z-index: 1;
+}
+
+.nav-item .nav-link.active{
+    color: #00BCD4;
+}
+
+.nav-item .nav-link:hover{
+    color: #00BCD4;
+}
+
+/* Hero */
+.hero{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../Images/Background/hero.jpg);
+    background-size: cover;   
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero .inner{
+    padding: 35px 21px 0;
+}
+
+.hero .title-xlarge{
+    line-height: 80px;
+    font-size: 70px;
+    /* font-weight: 700; */
+    font-family: "Raleway", sans-serif;
+    letter-spacing: .05em;
+}
+
+.hero .inner .title-xlarge.title-xlarge2{
+    line-height: 80px;
+    font-size: 70px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: .05em;
+    font-weight: lighter;
+}
+
+.hero .inner .explore{
+    height: 50px;
+    line-height: 44px;
+    padding: 0 25px;
+    font-size: 19px;
+    margin: 30px;
+    letter-spacing: .05em;
+}
+
+/* properties */
+.properties .title-h1,#contact .title-h1{
+    margin-bottom: 1.1em;
+    color: #3c3950;
+    line-height: 69px;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    letter-spacing: .05em;
+}
+
+/* props */
+.props{
+    background-image: url('../Images/Background/props-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.props .prop-caption{
+    padding: 32px 30px 30px;
+    background-color: #f0f3f2;
+    transition: all .2s linear;
+    border: 1px solid #dfe5e8;
+}
+
+.props .prop-caption .title-h3{
+    line-height: 38px;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #5f727f;
+    font-weight: 300;
+}
+
+.props .prop-caption .info{
+    margin-bottom: 16px;
+    color: #99a9b5;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 3px;
+}
+
+.props .prop-caption .info .caption-separator-line, .caption-separator-line-hover{
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    padding-bottom: 18px;
+    /* text-decoration: none; */
+}
+
+.props .prop-caption .info .caption-separator-line::after, .props .prop-caption .info .caption-separator-line-hover:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+}
+
+.sep {
+    margin: 0 6px;
+    border-left: 1px solid #d4dee1;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.props .prop-caption .subtitle{
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 15px;
+    color: #5f727f;
+    line-height: 24px;
+}
+
+.props .prop-caption .caption-buttons .details-btn{
+    margin: 20px 15px 0 0;
+    line-height: 26px;
+    font-size: 14px;
+    padding: 0 14px;
+}
+
+/* map */
+.map{
+    background-color: white;
+    padding: 100px 0;
+}
+
+.map .map-text{
+    margin-bottom: 1.1em;
+}
+
+.map .map-text .title-h1{
+    color: #3c3950;
+    line-height: 69px;
+    font-size: 50px;
+    letter-spacing: .05em;
+}
+
+/* contact us */
+#contact, .contacts{
+    background-color: #f0f3f2;
+}
+
+.contacts .team-person{
+    background-color: #ffffff; 
+    padding: 43px 0;
+}
+
+.contacts .team-person-info .social-links a{
+    color: #b6c6c9;
+    line-height: 16px;
+    margin: 12px 6px 0;
+}
+
+.contacts .team-person-info .team-person-name{
+    color: #3c3950;
+    line-height: 37px;
+    font-size: 24px;
+    font-weight: 300;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    margin: 0 0 5px;
+}
+
+.contacts .team-person-info .team-person-position{
+    color: #99a9b5;
+    font-size: 14px;
+}
+
+.team-person-phone{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 700;
+    letter-spacing: .05em;
+    color: #00BCD4;
+}
+
+/* Footer */
+#footer-nav{
+    background-color: #181828;
+    padding: 40px 0;
+    border-top: 1px solid #313646;
+}
+
+#footer-nav .footer-site-info{
+    color: #99a9b5;
+    
+}
+
+@media (max-width:1023px){
+    .navbar-nav{
+        height: 100%;
+        justify-content: space-between;
+    }
+    .nav-item .nav-link{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .hero .title-xlarge {
+        line-height: 8vw;
+        font-size: 7vw;
+    }
+
+    .hero .inner .title-xlarge.title-xlarge2{
+        line-height: 8vw;
+        font-size: 7vw;
+    }
+
+    /* properties */
+    .properties .title-h1,#contact .title-h1 {
+        line-height: 6.9vw;
+        font-size: 5vw;
+    }
+
+    .props .prop-caption .title-h3{
+        font-size: 24px;
+    }
+
+    /* Map */
+    .map .map-text .title-h1{
+        line-height: 53px;
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero .title-xlarge {
+        line-height: 53px;
+        font-size: 36px;
+    }
+
+    .hero .inner .title-xlarge.title-xlarge2{
+        line-height: 53px;
+        font-size: 36px;
+    }
+
+    /* properties */
+    .properties .title-h1,#contact .title-h1 {
+        line-height: 42px;
+        font-size: 28px;
+    }
+
+    /* contact us */
+    
+}
+
+
+
